@@ -1,0 +1,19 @@
+{
+    "provider": [{
+        "aws": [{
+            "region": "us-west-2"
+        }]
+    }],
+    "resource": [{
+        "aws_s3_bucket": [{
+            "publics3": [{
+                "acl": "public-read-write",
+                "bucket": "publics3",
+                "tags": [{
+                    "Environment": "Public",
+                    "Name": "My bucket"
+                }]
+            }]
+        }]
+    }]
+} 
